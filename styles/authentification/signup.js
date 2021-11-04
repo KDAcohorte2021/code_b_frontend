@@ -12,7 +12,7 @@ export const SignupStyle = styled.div`
   form {
     position: absolute;
     width: 398px;
-    height: 405px;
+    height: 335px;
     left: 521px;
     top: 160px;
     display: flex;
@@ -33,7 +33,7 @@ export const SignupStyle = styled.div`
     background: #fff;
   }
   .user-id input {
-    width: 49%;
+    width: 48%;
   }
   .login {
     position: absolute;

@@ -5,7 +5,7 @@ import {
 	ChildrenBackgroundstyle,
 	BaliseLeft,
 	BaliseRight
-} from "../../styles/authentification/login";
+} from "../../styles/authentification";
 import BackgraoundImage from "../../public/icons/background-authentification.png";
 import BalisesImage from "../../public/icons/3star.svg";
 import BaliseImage from "../../public/icons/star.svg";

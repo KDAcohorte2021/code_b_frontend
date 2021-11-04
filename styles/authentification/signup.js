@@ -40,7 +40,7 @@ export const SignupStyle = styled.div`
     width: 235px;
     height: 18px;
     left: 603px;
-    top: 570px;
+    top: 512px;
     color: #fff;
     font-size: 15px;
   }

@@ -15,7 +15,7 @@ export default function Background({ children }) {
 		<>
 			<BackgroundStyle>
 				<BaliseLeft>
-					<img src={BalisesImage.src} alt="balises de gauche illustratif  " />
+					<img src={BalisesImage.src} alt="balises de gauche illustratif " />
 				</BaliseLeft>
 				<img
 					src={BackgraoundImage.src}

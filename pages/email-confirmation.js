@@ -7,20 +7,21 @@ import {
 	ButtonStyle
 } from "../styles/authentification/login";
 import Link from "next/link";
-export default function ResetPassword() {
+export default function EmailConfirmation() {
 	return (
 		<>
 			<Background>
 				<Header />
 				<Form>
-					<h1>Réinitialisation de mot de passe</h1>
-					<InputStyle placeholder="Adresse email" name="email" />
-
-					<ButtonStyle>Réinitialiser</ButtonStyle>
-					<TextExplicatifStyle className="inscription">
-						Retour à la page de
-						<Link href="/login"> Connection</Link>
+					<h1>Vérifie tes e-mails</h1>
+					<TextExplicatifStyle>
+						Nous avons envoyé un e-mail de réinitialisation du mot de passe.
 					</TextExplicatifStyle>
+					<ButtonStyle>
+						<TextExplicatifStyle className="marginNone">
+							<Link href="/login">Retour à la page d’acceuil</Link>
+						</TextExplicatifStyle>
+					</ButtonStyle>
 				</Form>
 			</Background>
 		</>

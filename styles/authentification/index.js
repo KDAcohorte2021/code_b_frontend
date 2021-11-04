@@ -22,10 +22,18 @@ export const HeaderStyle = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	.logo {
+	@media screen and (max-height: 450px) {
+		height: 100px;
 	}
 	@media screen and (max-width: 650px) {
-		height: 100px;
+		height: 80px;
+		.logo {
+			height: 30px;
+			width: 200px;
+		}
+	}
+	@media screen and (max-height: 450px) {
+		height: 80px;
 		.logo {
 			height: 30px;
 			width: 200px;

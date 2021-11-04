@@ -4,16 +4,21 @@ export const Form = styled.form`
 	width: 40%;
 	margin: auto;
 	color: white;
+	h1 {
+		text-align: center;
+		font-weight: 300;
+		font-size: 2.5em;
+	}
 	@media screen and (max-width: 650px) {
 		width: 60%;
 	}
 	@media screen and (max-width: 450px) {
 		width: 80%;
 	}
-	h1 {
-		text-align: center;
-		font-weight: 300;
-		font-size: 2.5em;
+	@media screen and (max-height: 450px) {
+		h1 {
+			font-size: 1.5em;
+		}
 	}
 `;
 export const InputStyle = styled.input`
@@ -25,6 +30,10 @@ export const InputStyle = styled.input`
 	margin-top: 30px;
 	padding: 0 10px;
 	transition: 0.3s;
+	@media screen and (max-height: 450px) {
+		height: 40px;
+		margin-top: 20px;
+	}
 	&::placeholder {
 		color: rgba(0, 0, 0, 0.5);
 	}
@@ -38,6 +47,19 @@ export const TextExplicatifStyle = styled.span`
 	margin-top: 20px;
 	width: 100%;
 	text-align: center;
+
+	@media screen and (max-height: 450px) {
+		margin-top: 10px;
+		font-size: 0.9em;
+	}
+	&.marginNone {
+		margin-top: 0;
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 	&.inscription {
 		a {
 			font-weight: 900;
@@ -51,6 +73,11 @@ export const TextExplicatifStyle = styled.span`
 		}
 		&:hover {
 			cursor: pointer;
+			text-decoration: underline;
+		}
+		&:focus {
+			outline: none;
+			border-bottom: 3px solid rgba(0, 0, 0, 0.5);
 		}
 	}
 `;
@@ -63,4 +90,23 @@ export const ButtonStyle = styled.button`
 	background: transparent;
 	margin-top: 20px;
 	color: white;
+	@media screen and (max-height: 450px) {
+		height: 40px;
+		margin-top: 10px;
+	}
+	&:focus {
+		outline: none;
+	}
+`;
+export const ButtonLink = styled.link`
+	height: 50px;
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 10px;
+	background: transparent;
+	margin-top: 20px;
+	color: white;
+	&:focus {
+		outline: none;
+	}
 `;

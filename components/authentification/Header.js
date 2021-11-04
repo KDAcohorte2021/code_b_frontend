@@ -1,7 +1,7 @@
 import React from "react";
 import { HeaderStyle } from "../../styles/authentification";
 import Image from "next/image";
-import logo from "../../public/logo/__CodeBèeh.svg";
+import logo from "../../assets/logo/__CodeBèeh.svg";
 export default function Header() {
 	return (
 		<HeaderStyle>

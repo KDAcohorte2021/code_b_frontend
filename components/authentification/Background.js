@@ -6,9 +6,9 @@ import {
 	BaliseLeft,
 	BaliseRight
 } from "../../styles/authentification";
-import BackgraoundImage from "../../public/icons/background-authentification.png";
-import BalisesImage from "../../public/icons/3star.svg";
-import BaliseImage from "../../public/icons/star.svg";
+import BackgraoundImage from "../../assets/icons/background-authentification.png";
+import BalisesImage from "../../assets/icons/3balise.svg";
+import BaliseImage from "../../assets/icons/balise.svg";
 export default function Background({ children }) {
 	return (
 		<>

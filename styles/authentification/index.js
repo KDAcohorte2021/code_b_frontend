@@ -103,4 +103,12 @@ export const DroitStyle = styled.div`
 			padding: 5px 10px;
 		}
 	}
+	@media screen and (max-height: 500px) {
+		font-size: 0.75em;
+		padding: 5px 0;
+		span {
+			display: block;
+			padding: 2.5px 10px;
+		}
+	}
 `;

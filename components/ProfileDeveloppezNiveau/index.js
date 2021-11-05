@@ -13,7 +13,6 @@ export default function ProfileGrid() {
 		<>
 			<Label>DÉVELOPPEZ VOTRE NIVEAU</Label>
 			<Container>
-				
 				{data.map((index) => (
 					
 					<Card key={index} color={

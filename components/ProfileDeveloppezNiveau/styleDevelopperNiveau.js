@@ -1,13 +1,7 @@
 import styled from "styled-components";
 
 
-export const Label = styled.label`
-font-family: Inter;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-color: #000000;
-`;
+
 export const Container = styled.div`
 margin:5px;
 box-sizing: border-box;
@@ -16,6 +10,13 @@ flex-direction:column;
 gap:11px;
 `;
 
+export const Label = styled.label`
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #000000;
+`;
 export const Card = styled.div`
 width: 469px;
 height: 100px;

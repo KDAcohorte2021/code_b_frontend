@@ -1,7 +1,6 @@
 import Background from "../components/authentification/Background";
 import Header from "../components/authentification/Header";
 import { SignupStyle } from "../styles/authentification/signup";
-import { Form } from "../styles/authentification/login";
 import Link from "next/link";
 export default function Signup() {
   return (

@@ -3,12 +3,15 @@ import styled from "styled-components";
 export const Container = styled.div`
 display: flex;
 margin:5px;
-width: 431px;
+padding:20px;
+width: 457px;
+height: 100%
 height: 60px;
 box-sizing: border-box;
 flex-direction:column;
-gap:11px;
-background: rgba(196, 196, 196, 0.18);;
+align-items: center;
+gap:15px;
+background-color: rgba(196, 196, 196, 0.18);
 `;
 export const ContainerTextAndCardColor = styled.div`
 display: flex;

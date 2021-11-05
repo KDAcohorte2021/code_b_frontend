@@ -17,15 +17,23 @@ export const BackgroundStyle = styled.div`
 `;
 
 export const HeaderStyle = styled.div`
-	height: 150px;
+	height: 140px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	.logo {
+	@media screen and (max-height: 450px) {
+		height: 100px;
 	}
 	@media screen and (max-width: 650px) {
-		height: 100px;
+		height: 80px;
+		.logo {
+			height: 30px;
+			width: 200px;
+		}
+	}
+	@media screen and (max-height: 450px) {
+		height: 80px;
 		.logo {
 			height: 30px;
 			width: 200px;
@@ -70,4 +78,37 @@ export const BaliseRight = styled.div`
 
 export const Container = styled.div`
 	position: absolute;
+`;
+
+export const DroitStyle = styled.div`
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 20px 0;
+	span {
+		padding: 10px 15px;
+		color: rgba(0, 0, 0, 0.5);
+		span {
+			font-weight: 900;
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		font-size: 0.85em;
+	}
+	@media screen and (max-width: 800px) {
+		font-size: 0.8em;
+		padding: 10px 0;
+		span {
+			display: block;
+			padding: 5px 10px;
+		}
+	}
+	@media screen and (max-height: 500px) {
+		font-size: 0.75em;
+		padding: 5px 0;
+		span {
+			display: block;
+			padding: 2.5px 10px;
+		}
+	}
 `;

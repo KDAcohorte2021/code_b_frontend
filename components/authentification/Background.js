@@ -4,7 +4,8 @@ import {
 	BackgroundStyle,
 	ChildrenBackgroundstyle,
 	BaliseLeft,
-	BaliseRight
+	BaliseRight,
+	DroitStyle
 } from "../../styles/authentification";
 import BackgraoundImage from "../../assets/icons/background-authentification.png";
 import BalisesImage from "../../assets/icons/3balise.svg";
@@ -14,7 +15,7 @@ export default function Background({ children }) {
 		<>
 			<BackgroundStyle>
 				<BaliseLeft>
-					<img src={BalisesImage.src} alt="balises de gauche illustratif  " />
+					<img src={BalisesImage.src} alt="balises de gauche illustratif " />
 				</BaliseLeft>
 				<img
 					src={BackgraoundImage.src}
@@ -24,6 +25,12 @@ export default function Background({ children }) {
 				<BaliseRight>
 					<img src={BaliseImage.src} alt="balises de gauche illustratif  " />
 				</BaliseRight>
+				<DroitStyle>
+					<span>Politique de confidentialité</span>
+					<span>
+						<span>codeBèeh</span>Tous droits réservés
+					</span>
+				</DroitStyle>
 			</BackgroundStyle>
 		</>
 	);

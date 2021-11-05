@@ -6,30 +6,26 @@ import {
 	TextExplicatifStyle,
 	ButtonStyle
 } from "../styles/authentification/login";
-import Link from "next/link";
 import { useRouter } from "next/router";
-export default function ResetPassword() {
+export default function EmailConfirmation() {
 	const router = useRouter();
 	return (
 		<>
 			<Background>
 				<Header />
 				<Form>
-					<h1>Réinitialisation du mot de passe</h1>
-					<InputStyle placeholder="Adresse email" name="email" />
-
+					<h1>Vérifié vos mails</h1>
+					<TextExplicatifStyle>
+						Nous vous avons envoyé un mail de réinitialisation :).
+					</TextExplicatifStyle>
 					<ButtonStyle
 						onClick={(e) => {
 							e.preventDefault();
-							router.push("/email-confirmation");
+							router.push("/login");
 						}}
 					>
-						Réinitialiser
+						Retour à la page d’acceuil
 					</ButtonStyle>
-					<TextExplicatifStyle className="inscription">
-						Retour à la page de
-						<Link href="/login"> Connection</Link>
-					</TextExplicatifStyle>
 				</Form>
 			</Background>
 		</>

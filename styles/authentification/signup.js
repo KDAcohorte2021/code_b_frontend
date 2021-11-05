@@ -29,9 +29,10 @@ export const SignupStyle = styled.div`
   div input {
     width: 100%;
     background: #fff;
+    border: none;
   }
   .user-id input {
-    width: 48%;
+    width: 49%;
   }
   .login {
     position: absolute;

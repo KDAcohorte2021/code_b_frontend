@@ -1,4 +1,9 @@
-import Header from '../components/headerProfil/header'
+import Link from "next/link";
 export default function Home() {
-	return <Header/>;
+	return (
+		<div>
+			<Link href="/login">login</Link>
+			<Link href="/signup">signup</Link>
+		</div>
+	);
 }

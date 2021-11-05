@@ -10,11 +10,9 @@ export const SignupStyle = styled.div`
     color: #fff;
   }
   form {
-    position: absolute;
-    width: 398px;
+    width: 40%;
     height: 335px;
-    left: 521px;
-    top: 160px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,6 +41,11 @@ export const SignupStyle = styled.div`
     top: 512px;
     color: #fff;
     font-size: 15px;
+  }
+  .login a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
   }
 
   button {

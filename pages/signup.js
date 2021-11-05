@@ -1,42 +1,35 @@
 import Background from "../components/authentification/Background";
 import Header from "../components/authentification/Header";
-import {
-  Form,
-  InputStyle,
-  TextExplicatifStyle,
-  ButtonStyle,
-} from "../styles/authentification/login";
 import { SignupStyle } from "../styles/authentification/signup";
+import { Form } from "../styles/authentification/login";
 import Link from "next/link";
 export default function Signup() {
   return (
     <>
       <Background>
         <Header />
+        <SignupStyle>
+            <form>
+              <h1>Inscription</h1>
 
-        <Form>
-          <h1>Inscription</h1>
-          <SignupStyle>
-            <div className="user-id">
-              <InputStyle name="" placeholder="Nom" />
-              <InputStyle name="" placeholder="Prenom" />
-            </div>
-          </SignupStyle>
+              <div className="user-id">
+                <input name="" placeholder="Nom" />
+                <input name="" placeholder="Prenom" />
+              </div>
 
-          <InputStyle name="" placeholder="Pseudo" />
+              <input name="" placeholder="Pseudo" />
 
-          <InputStyle name="" placeholder="Adresse email" />
+              <input name="" placeholder="Adresse email" />
 
-          <InputStyle name="" placeholder="Mot de passe" />
+              <input name="" placeholder="Mot de passe" />
 
-          <ButtonStyle onClick={(e) => e.preventDefault()}>
-            S'inscrire
-          </ButtonStyle>
-        </Form>
-        <TextExplicatifStyle className="inscription">
-          Tu as deja un compte?
-          <Link href="/login"> connexion </Link>
-        </TextExplicatifStyle>
+              <button onClick={(e) => e.preventDefault()}>S'inscrire</button>
+            </form>
+            <span className="inscription">
+              Tu as deja un compte?
+              <Link href="/login"> connexion </Link>
+            </span>
+        </SignupStyle>
       </Background>
     </>
   );
